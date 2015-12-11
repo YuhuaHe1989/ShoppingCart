@@ -3,7 +3,7 @@
 var app = angular.module('paymentApp', ['ui.router', 'ngStorage', 'stripe.checkout']);
 
 app.constant('ENV', {
-  API_URL: 'http://localhost:3000'
+  API_URL: 'http://localhost:3000 || https://floating-thicket-4966.herokuapp.com/#/register'
 });
 
 app.run(function($rootScope, $localStorage) {
