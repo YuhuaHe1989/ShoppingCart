@@ -1,0 +1,27 @@
+{
+  "name": "expresstest",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Cade Nichols <cade@cadenichols.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/cadenichols/express-sample",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "sweetalert": "~1.1.3",
+    "font-awesome": "~4.5.0",
+    "angular": "~1.4.8",
+    "ngstorage": "~0.3.10",
+    "angular-ui-router": "ui-router#~0.2.15"
+  }
+}

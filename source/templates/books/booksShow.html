@@ -1,0 +1,19 @@
+<div>
+  <h2>
+    {{book.title}}
+  </h2>
+  <h3>
+    By {{book.author}}
+  </h3>
+  <h4>
+    Price {{book.price | currency}}
+  </h4>
+  <button ui-sref='books.index' class="btn btn-default">Back to Books</button>
+  <button stripe-checkout="doCheckout"
+            data-key="pk_test_si6a8GCBJvQkiMo6Msg0DLbn"
+            ng-attr-data-name="{{book.title}}"
+            ng-attr-data-description="Five dollahs!"
+            ng-attr-data-amount="{{book.price * 100}}">
+      Buy
+    </button>
+</div>

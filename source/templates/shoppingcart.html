@@ -1,0 +1,28 @@
+<div>
+ <table class="table">
+   <thead>
+     <tr>
+       <th>Title</th>
+       <th>Author</th>
+       <th>Price</th>
+     </tr>
+   </thead>
+  <tbody>
+    <tr ng-repeat="item in cartItems">
+      <td>{{item.title}}</td>
+      <td>{{item.author}}</td>
+      <td>{{item.price | currency}}</td>
+    </tr>
+  </tbody>
+ </table>
+ Total: {{checkoutPrice | currency}}
+ <br>
+  <button ui-sref='books.index' class="btn btn-default">Back to Books</button>
+  <button stripe-checkout="doCheckout"
+            data-key="pk_test_si6a8GCBJvQkiMo6Msg0DLbn"
+            ng-attr-data-name="{{book.title}}"
+            ng-attr-data-description="Five dollahs!"
+            ng-attr-data-amount="{{book.price * 100}}">
+      Checkout
+    </button>
+</div>
